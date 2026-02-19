@@ -161,6 +161,7 @@ impl Drop for Mangler {
 pub struct ManglerConfig {
     pub buffer_size: usize,
     pub max_payload_size: usize,
+    pub loss_factor: f64,
 }
 
 impl Default for ManglerConfig {
@@ -168,6 +169,7 @@ impl Default for ManglerConfig {
         Self {
             buffer_size: u16::MAX as usize,
             max_payload_size: 1472,
+            loss_factor: 0.005,
         }
     }
 }

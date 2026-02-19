@@ -7,7 +7,7 @@ use std::sync::mpsc::{Receiver, Sender};
 
 use crate::{ManglerConfig, Packet};
 
-pub fn forward_main(
+pub(crate) fn forward_main(
     config: ManglerConfig,
     errs: Sender<Box<dyn Error + Send>>,
     socket: UdpSocket,

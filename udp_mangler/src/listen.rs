@@ -7,7 +7,7 @@ use std::sync::mpsc::Sender;
 
 use crate::{ManglerConfig, Packet};
 
-pub fn listen_main(
+pub(crate) fn listen_main(
     config: ManglerConfig,
     errs: Sender<Box<dyn Error + Send>>,
     socket: UdpSocket,
@@ -46,10 +46,8 @@ pub fn listen_main(
 
         log::trace!("New UDP packet of size {packet_size} from {sender_addr}");
 
-        to_mangler
-            .send(Packet {
-                content: Vec::from(&buffer[..packet_size]),
-            })
-            .expect("to_mangler channel dead");
+        ok_or_ret!(to_mangler.send(Packet {
+            content: Vec::from(&buffer[..packet_size]),
+        }));
     }
 }

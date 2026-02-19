@@ -17,12 +17,17 @@ lto = true
 codegen-units = 1
 panic = "abort"
 
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+
 [workspace.dependencies]
 udp_mangler = { version = "0.1.0", path = "udp_mangler" }
 
 # Lib packages
 log = { version = "0.4" }
 derive_more = { version = "2" }
+rand = { version = "0.10" }
 
 # CLI dependencies
 clap = { version = "4" }
