@@ -4,7 +4,10 @@ use eframe::egui;
 use udp_mangler as _;
 
 fn main() {
-    let options = eframe::NativeOptions::default();
+    let options = eframe::NativeOptions {
+        renderer: eframe::Renderer::Wgpu,
+        ..Default::default()
+    };
 
     eframe::run_simple_native("UDP Mangler", options, run_app).expect("eframe returned an error");
 }

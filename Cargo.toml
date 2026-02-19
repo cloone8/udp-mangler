@@ -36,7 +36,6 @@ simplelog = { version = "0.12" }
 # GUI dependencies
 eframe = { version = "0.33" }
 
-
 [workspace.lints.rust]
 # Groups
 future_incompatible = { level = "warn", priority = -1 }
