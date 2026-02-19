@@ -3,7 +3,7 @@ resolver = "3"
 members = ["udp_mangler", "udp_mangler_cli", "udp_mangler_gui"]
 
 [workspace.package]
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 rust-version = "1.93.1"
 authors = ["Wouter de Bruijn <wouter@wutru.io>"]
@@ -22,7 +22,7 @@ panic = "abort"
 inherits = "release"
 
 [workspace.dependencies]
-udp_mangler = { version = "0.1.0", path = "udp_mangler" }
+udp_mangler = { version = "0.1.1", path = "udp_mangler" }
 
 # Lib packages
 log = { version = "0.4" }
