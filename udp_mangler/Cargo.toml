@@ -1,0 +1,16 @@
+[package]
+name = "udp_mangler"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+homepage.workspace = true
+repository.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+derive_more = { workspace = true, features = ["display", "error"] }
+log = { workspace = true }

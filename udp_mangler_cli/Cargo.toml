@@ -1,0 +1,21 @@
+[package]
+name = "udp_mangler_cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+homepage.workspace = true
+repository.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "udp_mangler"
+path = "src/main.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+udp_mangler.workspace = true
+clap = { workspace = true, features = ["derive"] }
+simplelog = { workspace = true }
