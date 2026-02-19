@@ -1,5 +1,6 @@
 [package]
 name = "udp_mangler"
+description = "A library for simulating various network conditions for UDP sockets"
 version.workspace = true
 edition.workspace = true
 rust-version.workspace = true

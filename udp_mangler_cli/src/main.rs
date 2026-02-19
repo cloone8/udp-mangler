@@ -1,6 +1,4 @@
-//! CLI for [udp_mangler]
-//!
-//!
+#![doc = include_str!("../README.md")]
 
 use std::process::ExitCode;
 

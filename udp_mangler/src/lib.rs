@@ -1,4 +1,4 @@
-#![doc = include_str!("../../README.md")]
+#![doc = include_str!("../README.md")]
 
 use core::error::Error;
 use core::net::{Ipv4Addr, Ipv6Addr, SocketAddr};
