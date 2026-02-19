@@ -1,5 +1,6 @@
 [package]
 name = "udp_mangler_cli"
+description = "CLI for UDP Mangler"
 version.workspace = true
 edition.workspace = true
 rust-version.workspace = true
