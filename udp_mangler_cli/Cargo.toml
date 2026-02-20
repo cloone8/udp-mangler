@@ -20,3 +20,4 @@ workspace = true
 udp_mangler.workspace = true
 clap = { workspace = true, features = ["derive"] }
 simplelog = { workspace = true }
+ctrlc = { workspace = true }

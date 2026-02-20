@@ -16,3 +16,4 @@ workspace = true
 derive_more = { workspace = true, features = ["display", "error"] }
 log = { workspace = true }
 rand = { workspace = true }
+arc-swap = { workspace = true }
