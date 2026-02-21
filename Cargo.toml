@@ -21,6 +21,10 @@ panic = "abort"
 [profile.dist]
 inherits = "release"
 
+[profile.quick]
+inherits = "dev"
+debug = 0
+
 [workspace.dependencies]
 udp_mangler = { version = "1.0.0", path = "udp_mangler" }
 

@@ -193,7 +193,7 @@ impl Drop for Mangler {
 }
 
 /// The configuration for a [Mangler]
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct ManglerConfig {
     /// The internal buffer size used to receive packets.
     /// Does not affect mangling functionality, but any packets larger than this
